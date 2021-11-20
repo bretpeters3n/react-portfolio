@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.8e8e2f3e.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.92d34541.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.92d34541.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.1a1a288c.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.1a1a288c.js.map",
+    "static/css/2.383c0125.chunk.css": "/react-portfolio/static/css/2.383c0125.chunk.css",
+    "static/js/2.2ddb895e.chunk.js": "/react-portfolio/static/js/2.2ddb895e.chunk.js",
+    "static/js/2.2ddb895e.chunk.js.map": "/react-portfolio/static/js/2.2ddb895e.chunk.js.map",
+    "index.html": "/react-portfolio/index.html",
+    "static/css/2.383c0125.chunk.css.map": "/react-portfolio/static/css/2.383c0125.chunk.css.map",
+    "static/css/main.8e8e2f3e.chunk.css.map": "/react-portfolio/static/css/main.8e8e2f3e.chunk.css.map",
+    "static/js/2.2ddb895e.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.2ddb895e.chunk.js.LICENSE.txt",
+    "static/media/external-link-alt-solid.13e5d45b.svg": "/react-portfolio/static/media/external-link-alt-solid.13e5d45b.svg",
+    "static/media/github-brands.e2f07326.svg": "/react-portfolio/static/media/github-brands.e2f07326.svg",
+    "static/media/linkedin-brands.f4041044.svg": "/react-portfolio/static/media/linkedin-brands.f4041044.svg",
+    "static/media/stack-overflow-brands.e25e45af.svg": "/react-portfolio/static/media/stack-overflow-brands.e25e45af.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1a1a288c.js",
+    "static/css/2.383c0125.chunk.css",
+    "static/js/2.2ddb895e.chunk.js",
+    "static/css/main.8e8e2f3e.chunk.css",
+    "static/js/main.92d34541.chunk.js"
+  ]
+}
