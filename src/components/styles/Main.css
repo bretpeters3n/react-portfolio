@@ -1,0 +1,129 @@
+:root {
+  --main-dark-color: #0c0a00;
+  --main-accent-color: #ffe;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-accent-color);
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.header h1 {
+  font-size: 48px;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 32px;
+  /* background-color: var(--main-accent-color); */
+}
+
+.container {
+  padding-top: 38px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-link {
+  text-align: center;
+}
+
+.portfolio-column {
+  float: left;
+  width: 50%;
+}
+
+.row {
+  display: flex;
+  padding-top: 24px;
+}
+
+.column {
+  flex: 45%;
+  padding: 12px;
+  margin: 12px;
+  border-radius: 8px;
+  box-shadow: 0 0 4px 4px rgb(243, 243, 222);
+}
+
+.icon-group {
+  display: flex;
+  gap: 12px;
+}
+
+.card {
+  flex: 45%;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  /* padding: 12px; */
+  margin: 12px;
+  /* cursor: pointer; */
+}
+
+.card .cover {
+  padding: 12px;
+  /* margin: 12px; */
+  background-color: rgba(255, 255, 255, 0.75);
+  transition: opacity 0.15s ease-in;
+  opacity: 0;
+}
+
+.card:hover .cover {
+  opacity: 1;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.nav-link {
+  color: var(--main-dark-color) !important;
+}
+
+.nav-pills .nav-link.active {
+  color: #fff !important;
+  background-color: var(--main-dark-color) !important;
+}
+
+.projectCodeScreenBG {
+  background-image: "./assets/img/code-screen.jpg";
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 32px;
+    gap: 18px;
+  }
+
+  .header h1 {
+    font-size: 32px;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+}

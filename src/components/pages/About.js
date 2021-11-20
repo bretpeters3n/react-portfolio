@@ -1,16 +1,16 @@
-import React from 'react';
+import React from "react";
 
 export default function About() {
   return (
     <div>
-      <h1>About Page</h1>
+      <h1>About Me</h1>
       <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
+        I enjoy being at the forefront of technology and am focused on
+        connecting everyday users with emerging technologies. I became
+        interested in coding at an early age, and after practcing design in
+        silicon valley for years, I’m excited to be doing it myself!
+        <br />I really love street biking, live comedy, live music, and problem
+        solving. I enjoy meeting new people and learning new things :)
       </p>
     </div>
   );
