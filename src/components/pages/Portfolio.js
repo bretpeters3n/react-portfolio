@@ -6,7 +6,7 @@ import DeployLink from "../assets/icons/external-link-alt-solid.svg";
 export default function Portfolio({ portfolioContent }) {
   return (
     <div>
-      <h1>Portfolio</h1>
+      <h2>Portfolio</h2>
       <div>
         <div className="row">
           {portfolioContent.map((e) => (
