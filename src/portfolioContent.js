@@ -9,7 +9,7 @@ const portfolioContent = [
   {
     title: "Cat Memory",
     subTitle: "U of M Coding Bootcamp",
-    deployURL: "https://bretpeters3n.github.io/group-project-1-quick-getaway/",
+    deployURL: "https://bretpeters3n.github.io/group-project-1-cat-memory/",
     github: "https://github.com/bretpeters3n/group-project-1-quick-getaway",
     imagePATH: "./assets/img/project-catMemory.jpg",
   },
