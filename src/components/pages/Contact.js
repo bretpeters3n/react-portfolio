@@ -1,11 +1,15 @@
 import { useState } from "react";
 
+// import helpers
+import { validateEmail } from "../../utils/helpers";
+
 function Contact() {
   // Here we set two state variables for firstName and lastName using `useState`
   const [fullName, setFullName] = useState("");
   const [emailAddress, setEmailAddress] = useState("");
   const [message, setMessage] = useState("");
-  const [alert, setAlert] = useState("");
+
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
@@ -18,8 +22,29 @@ function Contact() {
       setEmailAddress(value);
     } else if (name === "message") {
       setMessage(value);
+    }
+
+    if (!fullName) {
+      setErrorMessage("You must enter name");
+      return;
     } else {
-      setAlert("One of your fields is incomplete");
+      setErrorMessage("");
+    }
+
+    if (!validateEmail(emailAddress)) {
+      setErrorMessage("Email address is invalid");
+      // We want to exit out of this code block if something is wrong so that the user can correct it
+      return;
+      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
+    } else {
+      setErrorMessage("");
+    }
+
+    if (!message) {
+      setErrorMessage("You must enter message");
+      return;
+    } else {
+      setErrorMessage("");
     }
   };
 
@@ -32,7 +57,6 @@ function Contact() {
     setFullName("");
     setEmailAddress("");
     setMessage("");
-    setAlert("One of your fields is incomplete");
   };
 
   return (
@@ -79,8 +103,12 @@ function Contact() {
         <button type="button" onClick={handleFormSubmit}>
           Submit
         </button>
-        <p>{alert}</p>
       </form>
+      {errorMessage && (
+        <div>
+          <p className="error-text">{errorMessage}</p>
+        </div>
+      )}
     </div>
   );
 }
